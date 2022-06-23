@@ -14,7 +14,7 @@ app = Flask(__name__, template_folder='./ui')
 camera = cv2.VideoCapture(0)
 model = load_model('model.h5')
 detector=MTCNN()
-emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
+emotion_labels = ['Angry','Fear','Happy','Neutral', 'Sad', 'Surprise']
 result_label = emotion_labels[0]
 
 def detect_face(image):
