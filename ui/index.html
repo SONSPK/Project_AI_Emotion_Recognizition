@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19146045-EMOTION</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        */ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        #video_frame {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            margin: 0 22px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #333;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .active {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #000000;
+            text-decoration: none;
+            font-weight: 500;
+            color: rgb(240, 237, 65);
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .content {
+            margin-top: 16px;
+        }
+
+        .post {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .post-content {
+            display: flex;
+            justify-items: center;
+        }
+
+        .description {
+            font-size: 16px;
+            margin: 16px 0;
+            margin-bottom: 16px;
+        }
+
+        .post-img img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .tab {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        footer {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+        }
+    </style>
+
+</head>
+
+<body style="background-color:rgb(255, 255, 255);">
+    <div class="container">
+        <section class="logo">
+            <img src="http://minhnhut.me/wp-content/uploads/2022/06/SPKT.png" alt="" width="450px" height="auto">
+        </section>
+        <header>
+
+            <img src="http://minhnhut.me/wp-content/uploads/2022/06/istockphoto-1371647343-612x612-1.jpg" alt=""
+                width="100%">
+            <p>______________________ĐỀ TÀI: NHẬN DIỆN CẢM XÚC TRÊN KHUÔN MẶT______________</p>
+        </header>
+
+
+
+        <nav>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+                <button class="tablinks" onclick="openTab(event, 'Realtime')">Realtime</button>
+                <button class="tablinks" onclick="openTab(event, 'Profile')">Profile</button>
+                <button class="tablinks" onclick="openTab(event, 'Code')">Code</button>
+            </div>
+        </nav>
+        <section class="content">
+            <div id="Home" class="post">
+                <div class="post-content">
+                    <div class="post-detail">
+                        <h2>I. GIỚI THIỆU ĐỀ TÀI</h2>
+                        <h3>1. Đặt vấn đề</h3>
+                        <p class="description">Khuôn mặt của con người biểu hiện nhiều cảm xúc mà không cần phải nói ra.
+                            Đó là một trong những phương tiện mạnh mẽ và tự nhiên nhất để con người truyền đạt thể hiện
+                            cảm xúc.Không giống như các hình thức giao tiếp phi ngôn ngữ khác, cảm xúc trên khuôn mặt nó
+                            phổ quát.
+                        <div class="post-img">
+                            <img src="http://minhnhut.me/wp-content/uploads/2022/06/face_shutterstock_ysdw.jpg"
+                                width="70%">
+                        </div>
+                        Hiện nay, nhận dạng và phân tích cảm xúc khuôn mặt tự động là một vấn đề thú vị và đầy thách
+                        thức, có ảnh hưởng to lớn đến xã hội. Cảm xúc trên khuôn mặt và hành động của chúng ta là phương
+                        tiện giao tiếp phi ngôn ngữ, bao gồm 93% cảm xúc giao tiếp của con người, trong đó 55% thể hiện
+                        cử chỉ khuôn mặt và hành động của con người.
+                        <h3>2. Đề tài Nhận dạng cảm xúc trên khuôn mặt</h3>
+                        <p class="description">Nhận dạng cảm xúc qua khuôn mặt có ứng dụng trong các lĩnh vực khác nhau:
+                        <p>
+                            + Giáo dục: Phản ứng của người học trong thời gian thực và sự tham gia vào nội dung là giáo
+                            dục là một thước đo lường cho hiệu quả của bài giảng.
+                        </p>
+                        <p>+ Tiếp thị: Đây là một cách tuyệt vời để các công ty kinh doanh phân tích cách khách hàng
+                            phản hồi với quảng cáo, sản phẩm, bao bì và thiết kế cửa hàng của họ.
+                        </p>
+                        <p>
+                            + Chơi game: Với sự ra đời của game thực tế ảo gần với trải nghiệm thực tế. Nhận dạng cảm
+                            xúc khuôn mặt đóng một vai trò quan trọng để cải thiện trải nghiệm chơi trò chơi.
+                        </p>
+                        <p>+ Bảo mật: Nó có thể giúp xác định hành vi đáng ngờ trong đám đông và có thể được sử dụng để
+                            ngăn chặn tội phạm và những kẻ khủng bố tiềm năng, đồng thời phát hiện và xử lí tội phạm.
+                        </p>
+                        <p>+ Chăm sóc sức khỏe: Nó có thể hữu ích trong việc tự động hóa dịch vụ y tế. Cả sức khỏe thể
+                            chất và tinh thần có thể được phân tích thông qua ứng dụng này.</p>
+                        <p>+ Dịch vụ khách hàng: Quản lý dịch vụ khách hàng có thể hiệu quả hơn bằng cách sử dụng hệ
+                            thống nhận dạng cảm xúc khuôn mặt. Phân tích phản hồi của khách hàng và phản ứng của máy
+                            tính sẽ đảm bảo tương tác máy tính với con người trong cuộc sống thực.
+                        </p>
+
+                        <h2>II.QUY TRÌNH THỰC HIỆN</h2>
+                        <div class="post-img">
+                            <img src="http://minhnhut.me/wp-content/uploads/2022/06/Picture1.png" width="35%">
+                        </div>
+                        <h3>Xây dựng mô hình CNN:</h3>
+                        <div class="post-img">
+                            <img src="http://minhnhut.me/wp-content/uploads/2022/06/Picture2.png" width="95%">
+                        </div>
+                        <p>Mô hình CNN được xây dựng với các Convolution layer và Max pooling layer xếp chồng lên nhau
+                            và xen giữa là các lớp Batch Normalization và Dropout(theo thứ tự: Convolution- Batch
+                            Normalization- Max pooling- Dropout) trong đó lớp Convolution và Max pooling làm thay đổi
+                            kích thước của ảnh còn Batch Normalization và Drop out giữ nguyên kích thước ảnh của lớp
+                            trước . Input của model là hình ảnh trên gray scale với kích thước là 48x48. Layer cuối của
+                            mô hình là Fully connected layer với output là vector 6 chiều tương ứng với 6 class cần phân
+                            loại. </p>
+
+                        <h3>Xây dựng detect từ khung hình:</h3>
+                        <div class="post-img">
+                            <img src="http://minhnhut.me/wp-content/uploads/2022/06/Picture3.png" width="95%">
+                        </div>
+                        <p>+Dùng MTCNN để cắt khung hình.</p>
+                        <p>+Cắt khuôn mặt đó ra và Resize nó, chuyển hình thành dạng gray scale.</p>
+                        <p>+Đưa vào model CNN.</p>
+                        <h2>III. Kết quả thiết kế:</h2>
+                        <div class="post-img">
+                            <img src="http://minhnhut.me/wp-content/uploads/2022/06/Picture4.png" width="55%">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div id="Realtime" class="post">
+                <div class="row">
+                    <div class="col-lg-8  offset-lg-2">
+                        <h2 class="mt-5"></h2>
+                        <img id="video_frame" src="{{ url_for('video_feed') }}" height="100%">
+                   
+                    </div>
+                </div> 
+                </div>
+            </div> -->
+
+            <div id="Profile" class="post">
+                <div class="post-content">
+                    <div class="post-detail">
+                        <h3>Thông tin người thực hiện đề tài</h3>
+                        <p class="description">sinh viên trường Đại học Sư Phạm Kỹ Thuật Thành Phố Hồ Chí Minh</p>
+                        <p>HỌ VÀ TÊN: PHẠM NGỌC SƠN</p>
+                        <p>MSSV:19146045</p>
+                        <p>LỚP: 19146CL2A</p>
+                        <p>Ngành học: Công Nghệ Kỹ Thuật Cơ Điện Tử</p>
+                        <div class="post-img">
+                            <img src="http://minhnhut.me/wp-content/uploads/2022/06/2-scaled.jpg" width="45%">
+                        </div>
+                        <p>fb:PHAM SON, Zalo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Code" class="post">
+
+                <ul>
+                    <li>
+                        <h3>Link dataset: <span> <a
+                                    href="https://drive.google.com/drive/folders/19oaOWqSbvSgxDeXtngKuWtzj5TlmTa39?usp=sharing">here</a></span>
+                        </h3>
+
+                    </li>
+                    <li>
+                        <h3>Link colab: <span> <a href=""">here</a></span></h3>
+                    </li>
+                </ul>
+                
+    
+            </div>
+
+        </section>
+        <footer>
+
+        </footer>
+
+        <script>
+            function openTab(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName(" post"); for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks"); for (i = 0; i < tablinks.length;
+                    i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            } </script>
+</body>
+
+
+
+</html>
